@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moka Web</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Say<span>NA</span></a>
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="Open Navigation"
+        />
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt="Close Navigation"
+          />
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Price</a></li>
+          </ul>
+          <ul class="secondary-nav">
+            <li><a href="#">Contact</a></li>
+            <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">It's a clean communication</p>
+          <h1>A Task App which talk to people</h1>
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Trial Version</a>
+            <a href="#" class="watch-video-cta"
+              ><img src="images/watch.svg" alt="Image is not found" />Watch a
+              video</a
+            >
+          </div>
+        </div>
+        <img
+          src="images/illustration.svg"
+          class="hero-img"
+          alt="illustration"
+        />
+      </div>
+    </section>
+    <section class="features-section">
+      <div class="container">
+        <ul class="features-list">
+          <li>Lorem ipsum dolor sit</li>
+          <li>sit amet consectetur</li>
+          <li>adipisicing elit. Necessitatibus</li>
+          <li>amet consectetur adipisicing</li>
+          <li>elit. Necessitatibus</li>
+          <li>ipsum dolor sit amet</li>
+        </ul>
+        <img src="images/holding-phone.jpg" alt="Man is Holding a phone" />
+      </div>
+    </section>
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="images/person.jpg" alt="Person" />
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae tenetur voluptates reprehenderit debitis perspiciatis,
+              natus iure repellat ratione sapiente quisquam!
+            </blockquote>
+            <cite>- Anne Marrie</cite>
+          </li>
+          <li>
+            <img src="images/person.jpg" alt="Person" />
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae tenetur voluptates reprehenderit debitis perspiciatis,
+              natus iure repellat ratione sapiente quisquam!
+            </blockquote>
+            <cite>- Anne Marrie</cite>
+          </li>
+          <li>
+            <img src="images/person.jpg" alt="Person" />
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae tenetur voluptates reprehenderit debitis perspiciatis,
+              natus iure repellat ratione sapiente quisquam!
+            </blockquote>
+            <cite>- Anne Marrie</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Send Message"
+            />
+          </form>
+        </div>
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1246.2166085431477!2d12.374192058293618!3d51.339943994902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f818200f2c73%3A0x93df80d2b9b4f552!2sLeipzig!5e0!3m2!1sen!2sde!4v1613095942907!5m2!1sen!2sde"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
